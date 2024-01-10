@@ -1,0 +1,81 @@
+1)
+one line 
+welcome to india 
+welcome to america
+welcome to delhi 
+welcome to pakistan 
+
+Ans)
+#include<stdio.h>
+int main()
+{
+    printf("Welcome to india");
+    printf("Welcome to america");
+    printf("Welcome to delhi");
+    printf("Welcome to pakistan");
+    return 0;
+}
+
+2)new line 
+welcome to india 
+welcome to america
+welcome to delhi 
+welcome to pakistan 
+
+Ans)
+#include<stdio.h>
+int main()
+{
+    printf("Welcome to india\n");
+    printf("Welcome to america\n");
+    printf("Welcome to delhi\n");
+    printf("Welcome to pakistan\n");
+    return 0;
+}
+
+3)
+five fruits name 
+
+
+Ans)
+#include<stdio.h>
+int main()
+{
+    printf("Apple\n");
+    printf("banana\n");
+    printf("Pinapple\n");
+    printf("Mango\n");
+    printf("orange\n");
+    return 0;
+}
+
+4)
+five country name
+
+Ans)
+#include<stdio.h>
+int main()
+{
+    printf("India\n");
+    printf("Pakistan\n");
+    printf("Shree Lanka\n");
+    printf("US\n");
+    printf("Bangladash\n");
+    return 0;
+}
+
+
+5)
+city name
+
+Ans)
+#include<stdio.h>
+int main()
+{
+    printf("Jaipur\n");
+    printf("Ajmer\n");
+    printf("Udaipur\n");
+    printf("Jodhpur\n");
+    printf("Bihar\n");
+    return 0;
+}

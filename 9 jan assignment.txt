@@ -1,0 +1,181 @@
+#include <stdio.h>
+
+int
+main ()
+{
+  char alph;
+  printf("enter the value of alph : ");
+  scanf("%c",&alph);
+  if(alph=='a'){
+      printf("apple");
+  }
+  return 0;
+}
+
+-------------------------------------------------
+
+#include <stdio.h>
+
+int
+main ()
+{
+  char alph;
+//   char alph2;
+  printf("enter the value of alph : ");
+  scanf("%c",&alph);
+  if(alph=='a'){
+      printf("apple");
+  }
+  if(alph=='b'){
+      printf("ball");
+  }
+  return 0;
+}
+
+---------------------------------------------------------
+
+#include <stdio.h>
+
+int
+main ()
+{
+  char alph;
+//   char alph2;
+  printf("enter the value of alph : ");
+  scanf("%c",&alph);
+  if(alph=='a'){
+      int a;
+      int b;
+      printf("enter the value of a : ");
+      scanf("%d",&a);
+      printf("enter the value of b : ");
+      scanf("%d",&b);
+      printf("Addition : %d",a+b);
+  }
+  else{
+      printf("sorry! not match");
+  }
+  return 0;
+}
+
+------------------------------------------------------
+
+#include <stdio.h>
+
+int
+main ()
+{
+  char alph;
+//   char alph2;
+  printf("enter the value of alph : ");
+  scanf("%c",&alph);
+  if(alph=='s'){
+      int a;
+      int b;
+      printf("enter the value of a : ");
+      scanf("%d",&a);
+      printf("enter the value of b : ");
+      scanf("%d",&b);
+      printf("substraction : %d",a-b);
+  }
+  else{
+      printf("sorry! not match");
+  }
+  return 0;
+}
+
+
+-------------------------------------------------------------
+
+#include <stdio.h>
+
+int
+main ()
+{
+  char alph;
+//   char alph2;
+  printf("enter the value of alph : ");
+  scanf("%c",&alph);
+  if(alph=='d'){
+      int a;
+      int b;
+      printf("enter the value of a : ");
+      scanf("%d",&a);
+      printf("enter the value of b : ");
+      scanf("%d",&b);
+      printf("divide : %d",a/b);
+  }
+  else{
+      printf("sorry! not match");
+  }
+  return 0;
+}
+
+
+-------------------------------------------------------------
+
+
+#include <stdio.h>
+
+int
+main ()
+{
+//   char alph;
+//   char alph2;
+  int num;
+  printf("enter the value of num : ");
+  scanf("%d",&num);
+  if(num%5==0){
+      printf("yes divisible");
+  }
+  else{
+      printf("not divisible");
+  }
+  return 0;
+}
+
+------------------------------------------------------------
+
+
+#include <stdio.h>
+
+int
+main ()
+{
+//   char alph;
+//   char alph2;
+  int num;
+  printf("enter the value of num : ");
+  scanf("%d",&num);
+  if(num%7==0){
+      printf("yes divisible");
+  }
+  else{
+      printf("not divisible");
+  }
+  return 0;
+}
+
+-------------------------------------------------------
+
+#include <stdio.h>
+
+int
+main ()
+{
+//   char alph;
+//   char alph2;
+  int num;
+  printf("enter the value of num : ");
+  scanf("%d",&num);
+  if(num%67==0){
+      printf("yes divisible");
+  }
+  else{
+      printf("not divisible");
+  }
+  return 0;
+}
+
+
+--------------------------------------------------------
