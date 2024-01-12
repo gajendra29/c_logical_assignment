@@ -599,9 +599,20 @@ int main()
     printf("Enter the marks of science : ");
     scanf("%d",&science);
     int total = eng+math+gk+hindi+science;
-    float per=(total/500)*100;
+    float per=total/5;
     
-    printf("The percent is : %f",per);
+    if(per>=90){
+        printf("Grade - A");
+    }
+    else if(per>=60 && per<90){
+        printf("Grade - B");
+    }
+    else if(per>=50 && per<60){
+        printf("Grade - C");
+    }
+    else{
+        printf("fail");
+    }
     return 0;
 }
 
