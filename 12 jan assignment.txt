@@ -1,3 +1,15 @@
+Q1)user :
+e :even number check 
+	even 
+	not even 
+
+o :odd number 
+	odd
+	not odd 
+
+not match 
+
+Ans)
 #include <stdio.h>
 
 int main()
@@ -33,5 +45,371 @@ int main()
     return 0;
 }
 
+--------------------------------------------------------
 
+Q2)v :check valid voter id 
+g :check gender 
+t :two number max 
+h :three number max 
+c :check vowel and consoant
 
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    char alph;
+    printf("Enter a charactar : ");
+    scanf("%c",&alph);
+    if(alph=='v'){
+        int age;
+        printf("Enter the age : ");
+        scanf("%d",&age);
+        if(age>=18){
+            printf("Valid");
+        }
+        else{
+            printf("Not valid");
+        }
+    }
+    else if(alph=='g'){
+        char gen;
+        printf("Enter the Charactar f for female and m for male : ");
+        scanf("%c",&gen);
+        if(gen=='f'){
+            printf("Female");
+        }
+        else if(gen=='m'){
+            printf("Male");
+        }
+        else{
+            printf("Others");
+        }
+    }
+    else if(alph=='t'){
+        int a;
+        int b;
+        printf("Enter the value of a : ");
+        scanf("%d",&a);
+        printf("Enter the value of b : ");
+        scanf("%d",&b);
+        if(a>b){
+            printf("A is Max");
+        }
+        else if(b>a){
+            printf("B is Max");
+        }
+        else{
+            printf("Both are equal");
+        }
+    }
+    else if(alph=='h'){
+        int a;
+        int b;
+        int c;
+        printf("Enter the value of a : ");
+        scanf("%d",&a);
+        printf("Enter the value of b : ");
+        scanf("%d",&b);
+        printf("Enter the value of c : ");
+        scanf("%d",&c);
+        if(a>b && a>c){
+            printf("A is Max");
+        }
+        else if(b>a && b>c){
+            printf("B is Max");
+        }
+        else if(c>a && c>b){
+            printf("C is Max");
+        }
+        else{
+            printf("All three are equal");
+        }
+    }
+    else if(alph=='c'){
+        char al;
+        printf("Enter the charctar to check vowal and consoant : ");
+        scanf("%c",&al);
+        if(al=='a' || al=='e' || al=='i' || al=='o' || al=='u'){
+            printf("Vowal");
+        }
+        else{
+            printf("Consonent");
+        }
+    }
+    else{
+        printf("Not match");
+    }
+    return 0;
+}
+
+-------------------------------------------------------------
+
+Q3)
+c : alphabet 
+	a :apple 
+	b :ball 
+	C :cat 
+	not match 
+
+d :digit check 
+	1 :one 
+	2 :two 
+	3 :three
+	not match 
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    char alph;
+    printf("Enter a charactar : ");
+    scanf("%c",&alph);
+    if(alph=='c'){
+       char al;
+       printf("Enter the alphabate : ");
+       scanf("%c",&al);
+       if(al=='a'){
+           printf("Apple");
+       }
+       else if(al=='b'){
+           printf("Ball");
+       }
+       else if(al=='c'){
+           printf("Cat");
+       }
+       else{
+           printf("Not match");
+       }
+    }
+    else if(alph=='d'){
+        int a;
+        printf("Enter a number : ");
+        scanf("%d",&a);
+        if(a==1){
+            printf("One");
+        }
+        else if(a==2){
+            printf("Two");
+        }
+        else if(a==3){
+            printf("Three");
+        }
+        else{
+           printf("Not match");
+       }
+    }
+    
+    else{
+        printf("Not match");
+    }
+    return 0;
+}
+
+------------------------------------------------------
+
+Q4)
+s : 
+	w:with varaible swap 
+	n:without varaible swap 
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    char alph;
+    printf("Enter a charactar : ");
+    scanf("%c",&alph);
+    if(alph=='s'){
+       char al;
+       printf("Enter the alphabate : ");
+       scanf(" %c",&al);
+       if(al=='w'){
+           int a;
+           int b;
+           int c;
+           printf("Enter the value of a : ");
+           scanf("%d",&a);
+           printf("Enter the value of b : ");
+           scanf("%d",&b);
+           printf("The value of a : %d",a);
+           printf("The value of b : %d",b);
+           c=a;
+           a=b;
+           b=c;
+           printf("The value of a after swap : %d",a);
+           printf("The value of b after swap : %d",b);
+       }
+       else if(al=='n'){
+           int a;
+           int b;
+           printf("Enter the value of a : ");
+           scanf("%d",&a);
+           printf("Enter the value of b : ");
+           scanf("%d",&b);
+           printf("The value of a : %d",a);
+           printf("The value of b : %d",b);
+           a=a+b;
+           b=a-b;
+           a=a-b;
+           printf("The value of a after swap : %d",a);
+           printf("The value of b after swap : %d",b);
+       }
+       else{
+           printf("Not match");
+       }
+    }
+    else{
+        printf("Not -Match");
+    }
+    return 0;
+}
+
+--------------------------------------------------------
+
+Q5)
+C program to convert temperature from Fahrenheit to Celsius and Celsius to Fahrenheit
+cesius 
+f 
+c---f 
+c 
+f---->c 
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    char alph;
+    printf("Enter the char : ");
+    scanf("%c",&alph);
+    if(alph=='f'){
+        float temp;
+        printf("Enter the temprature in celsius : ");
+        scanf("%f",&temp);
+        printf("The temprature in Fahrenheit is : %f",(temp*1.8)+32);
+    }
+    else if(alph=='c'){
+        float temp;
+        printf("Enter the temprature in Fahrenheit : ");
+        scanf("%f",&temp);
+        printf("The temprature in celsius is : %f",(temp-32)*.5556);
+    }
+    return 0;
+}
+
+------------------------------------------------------
+
+Q6)
+Check whether the trainge , square , reactanlge (area & volume)
+->input area /volume 
+area 
+traingle square rectangle 
+square 
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    char alph;
+    printf("Enter the char : ");
+    scanf("%c",&alph);
+    if(alph=='a'){
+        char al;
+        printf("Enter the shap from t,s,r : ");
+        scanf(" %c",&al);
+        if(al=='t'){
+            printf("The area of Trainge is : A=1/2*b*h");
+        }
+        else if(al=='s'){
+            printf("The area of square is : A=a*a");
+        }
+        else if(al=='r'){
+            printf("The area of a rectangle = length × width");
+        }
+    }
+    else if(alph=='v'){
+        char al;
+        printf("Enter the shap from t,s,r : ");
+        scanf("%c",&al);
+        if(al=='t'){
+            printf("The volume of Trainge is : B*H");
+        }
+        else if(al=='s'){
+            printf("The volume of square is : s*s*s");
+        }
+        else if(al=='r'){
+            printf("The volume of a rectangle = length × width × height");
+        }
+    }
+    else{
+        printf("Not Match");
+    }
+    return 0;
+}
+
+-------------------------------------------------------
+
+Q7)
+salalry :
+holidays (1) =full salary 
+2-5 =5% 
+5-14 =10% 
+15 =50% 
+else =not salary 
+
+output : 
+name:
+address: 
+bank details: 
+salary : 
+alot :
+ holidays 
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    int sal;
+    int holi;
+    printf("Enter the salary : ");
+    scanf("%d",&sal);
+    printf("Enter the Holiday : ");
+    scanf("%d",&holi);
+    if(holi==1){
+        printf("Name : Gajendra Singh\n");
+        printf("Address : Jaipur\n");
+        printf("Bank Details : SBI Bank\n");
+        printf("The Salary of this month will be : %d\n",sal);
+        printf("Holidays Aloted : %d\n",holi);
+    }
+    else if(holi>=2 && holi<5){
+        printf("Name : Gajendra Singh\n");
+        printf("Address : Jaipur\n");
+        printf("Bank Details : SBI Bank\n");
+        printf("The Salary of this month will be : %d\n",sal-(5/100));
+        printf("Holidays Aloted : %d\n",holi);
+    }
+    else if(holi>=5 && holi<14){
+        printf("Name : Gajendra Singh\n");
+        printf("Address : Jaipur\n");
+        printf("Bank Details : SBI Bank\n");
+        printf("The Salary of this month will be : %d\n",sal-(10/100));
+        printf("Holidays Aloted : %d\n",holi);
+    }
+    else if(holi==15){
+        printf("Name : Gajendra Singh\n");
+        printf("Address : Jaipur\n");
+        printf("Bank Details : SBI Bank\n");
+        printf("The Salary of this month will be : %d\n",sal-(50/100));
+        printf("Holidays Aloted : %d\n",holi);
+    }
+    else{
+        printf("No salary for this Month");
+    }
+    return 0;
+}
