@@ -391,21 +391,21 @@ int main()
         printf("Name : Gajendra Singh\n");
         printf("Address : Jaipur\n");
         printf("Bank Details : SBI Bank\n");
-        printf("The Salary of this month will be : %d\n",sal-(5/100));
+        printf("The Salary of this month will be : %d\n",sal-(sal/100)*5);
         printf("Holidays Aloted : %d\n",holi);
     }
     else if(holi>=5 && holi<14){
         printf("Name : Gajendra Singh\n");
         printf("Address : Jaipur\n");
         printf("Bank Details : SBI Bank\n");
-        printf("The Salary of this month will be : %d\n",sal-(10/100));
+        printf("The Salary of this month will be : %d\n",sal-(sal/100)*10);
         printf("Holidays Aloted : %d\n",holi);
     }
     else if(holi==15){
         printf("Name : Gajendra Singh\n");
         printf("Address : Jaipur\n");
         printf("Bank Details : SBI Bank\n");
-        printf("The Salary of this month will be : %d\n",sal-(50/100));
+        printf("The Salary of this month will be : %d\n",sal-(sal/100)*50);
         printf("Holidays Aloted : %d\n",holi);
     }
     else{
