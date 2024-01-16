@@ -1,0 +1,440 @@
+1)
+Q)number :
+1 -->10
+1+2+3+4+5+6+7+8+9+10 :
+
+dry run 
+code
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    int a = 1;
+    int sum = 0;
+    while(a<=10){
+        sum = sum+a;
+        a++;
+    }
+    printf("%d",sum);
+    return 0;
+}
+
+---------------------------------------------
+2)
+1---->10 even 
+
+dry run 
+code
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    int a = 1;
+    while(a<=10){
+        if(a%2==0){
+            printf("%d ",a);
+        }
+        a++;
+    }
+    return 0;
+}
+ 
+---------------
+
+3)
+1---->100 even 
+
+code
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    int a = 1;
+    while(a<=100){
+        if(a%2==0){
+            printf("%d ",a);
+        }
+        a++;
+    }
+    return 0;
+}
+ 
+-----------------------------------------
+
+4)
+50---->100 even 
+
+code
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    int a = 50;
+    while(a<=100){
+        if(a%2==0){
+            printf("%d ",a);
+        }
+        a++;
+    }
+    return 0;
+}
+ 
+----------------------------------
+
+5)
+45--->90 
+even
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    int a = 50-5;
+    while(a<=90){
+        if(a%2==0){
+            printf("%d ",a);
+        }
+        a++;
+    }
+    return 0;
+}
+ 
+----------------------------------------
+
+6)
+10--->1 even number 
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    int a = 10;
+    while(a>=1){
+        if(a%2==0){
+            printf("%d ",a);
+        }
+        a--;
+    }
+    return 0;
+}
+
+---------------------------------------
+
+7)
+100----1 
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    int a = 100;
+    while(a>=1){
+        if(a%2==0){
+            printf("%d ",a);
+        }
+        a--;
+    }
+    return 0;
+}
+
+-----------------------------------
+
+8)100---->50 
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    int a = 100;
+    while(a>=50){
+        if(a%2==0){
+            printf("%d ",a);
+        }
+        a--;
+    }
+    return 0;
+}
+
+------------------------------
+
+9)
+1--->10 odd number 
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    int a = 1;
+    while(a<=10){
+        if(a%2==1){
+            printf("%d ",a);
+        }
+        a++;
+    }
+    return 0;
+}
+
+------------------------
+
+10)
+1--->100 odd number 
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    int a = 1;
+    while(a<=100){
+        if(a%2==1){
+            printf("%d ",a);
+        }
+        a++;
+    }
+    return 0;
+}
+
+-------------------------------
+
+11)
+50--->100 odd number 
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    int a = 50;
+    while(a<=100){
+        if(a%2==1){
+            printf("%d ",a);
+        }
+        a++;
+    }
+    return 0;
+}
+
+---------------------------------
+
+12)
+67---->90 odd number 
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    int a = 67;
+    while(a<=90){
+        if(a%2==1){
+            printf("%d ",a);
+        }
+        a++;
+    }
+    return 0;
+}
+
+-----------------------------------
+
+13)
+10--->1 odd number 
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    int a = 10;
+    while(a>=1){
+        if(a%2==1){
+            printf("%d ",a);
+        }
+        a--;
+    }
+    return 0;
+}
+
+-----------------------
+
+14)
+98--->34 odd number 
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    int a = 98;
+    while(a>=34){
+        if(a%2==1){
+            printf("%d ",a);
+        }
+        a--;
+    }
+    return 0;
+}
+
+
+---------------------------------------------
+15)
+6312 ===>2136 
+
+dry run +code 
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    int num = 6312;
+    int sum = 0;
+    int rem;
+    while(num>0){
+        rem = num%10;
+        sum = sum*10+rem;
+        num = num/10;
+    }
+    printf("%d",sum);
+    return 0;
+}
+
+--------------------------------------------------
+16)
+v :check eligible for vote or not 
+a :check vowel ya consoant 
+e :even number check 
+o :odd number check 
+g :gender check 
+b :1---->10 number print 
+t :1---->100 number 
+r :number reverse 
+p :pallindrome
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    char alph;
+    printf("Enter your charactar : ");
+    scanf("%c",&alph);
+    if(alph=='v'){
+        int age;
+        printf("Enter your age : ");
+        scanf("%d",&age);
+        if(age>=18){
+            printf("Eligible");
+        }
+        else{
+            printf("Not eleigible");
+        }
+    }
+    else if(alph=='a'){
+        char al;
+        printf("Enter your charactar to check its vowal or not : ");
+        scanf(" %c",&al); 
+        if(al=='a'||al=='e'||al=='i'||al=='o'||al=='u'){
+            printf("vowal");
+        }
+        else{
+            printf("consonent");
+        }
+    }
+    else if(alph=='e'){
+        int a;
+        printf("Enter your number to check its even or not : ");
+        scanf("%d",&a);
+        if(a%2==0){
+            printf("Even");
+        }
+        else{
+            printf("Not even");
+        }
+    }
+    else if(alph=='o'){
+        int a;
+        printf("Enter your number to check its odd or not : ");
+        scanf("%d",&a);
+        if(a%2==1){
+            printf("odd");
+        }
+        else{
+            printf("Not odd");
+        }
+    }
+    else if(alph=='g'){
+        char al;
+        printf("Enter your charactar m for male and f for female : ");
+        scanf(" %c",&al);
+        if(al=='m'){
+            printf("Male");
+        }
+        else if(al=='f'){
+            printf("Female");
+        }
+        else{
+            printf("Others");
+        }
+    }
+    else if(alph=='b'){
+        int a=1;
+        while(a<=10){
+            printf("%d ",a);
+            a++;
+        }
+    }
+    else if(alph=='t'){
+        int a=1;
+        while(a<=100){
+            printf("%d ",a);
+            a++;
+        }
+    }
+    else if(alph=='r'){
+        int num;
+        printf("Enter the number to reverse : ");
+        scanf("%d",&num);
+        int sum = 0;
+        int rem;
+        while(num>0){
+            rem = num%10;
+            sum = sum*10+rem;
+            num = num/10;
+        }
+        printf("%d",sum);
+    }
+    else if(alph=='p'){
+        int num;
+        printf("Enter the number to reverse : ");
+        scanf("%d",&num);
+        int sum = 0;
+        int rem;
+        int temp = num;
+        while(num>0){
+            rem = num%10;
+            sum = sum*10+rem;
+            num = num/10;
+        }
+        printf("%d",sum);
+        if(temp==sum){
+            printf(" Pallendrom");
+        }
+        else{
+            printf(" Not Pallendrom");
+        }
+    }
+    return 0;
+}
