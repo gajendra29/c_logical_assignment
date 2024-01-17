@@ -1,0 +1,251 @@
+1)armstrong number 
+dry run :
+152 
+
+154 
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    int num = 152;
+    int sum = 0;
+    int rem;
+    int temp = num;
+    while(num>0){
+        rem = num%10;
+        sum = sum+rem*rem*rem;
+        num = num/10;
+    }
+    if(temp==sum){
+        printf("Armstrom number");
+    }
+    else{
+        printf("Not armstronm number");
+    }
+    return 0;
+}
+
+-------------------------------------------
+
+2)count digit :
+67437
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    int num = 67437;
+    int count = 0;
+    while(num>0){
+        num = num/10;
+        count++;
+    }
+    printf("%d",count);
+    return 0;
+}
+
+-----------------------------------------------------
+
+3)table print 2 
+dry run 
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    int a=1;
+    while(a<=10){
+        printf("%d\n",a*2);
+        a++;
+    }
+    return 0;
+}
+
+-----------------------------------------------------------
+
+4)user input table
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    int b = 1;
+    printf("Enter the number to print its table : ");
+    scanf("%d",&a);
+    while(b<=10){
+        printf("%d\n",b*a);
+        b++;
+    }
+    return 0;
+}
+
+--------------------------------------------------------
+
+5)sum of digit : dry run
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("Enter the number to print its sum : ");
+    scanf("%d",&a);
+    int sum = 0;
+    int rem;
+    while(a>0){
+        rem = a%10;
+        sum = sum+rem;
+        a = a/10;
+    }
+    printf("The sum of the digit is : %d",sum);
+    return 0;
+}
+
+----------------------------------------------------------
+
+Q)
+e :54--->90 even number print 
+
+o :45--->96 odd number print 
+
+s :1--->10 number sum 
+
+w :swap values
+
+p :pallindrome 
+
+r :reverse 
+
+a :armstrong 
+
+c :count of digit 
+
+t :table of number 
+
+Ans)
+#include <stdio.h>
+
+int main()
+{
+    char alph;
+    printf("Enter the charactar : ");
+    scanf("%c",&alph);
+    if(alph=='e'){
+        int a = 54;
+        while(a<=90){
+            if(a%2==0){
+                printf("Even numbers : %d\n",a);
+            }
+            a++;
+        }
+    }
+    else if(alph=='o'){
+        int a = 45;
+        while(a<=96){
+            if(a%2==1){
+                printf("Odd numbers : %d\n",a);
+            }
+            a++;
+        }
+    }
+    else if(alph=='s'){
+        int a = 1;
+        int sum = 0;
+        while(a<=10){
+            sum = sum+a;
+            a++;
+        }
+        printf("%d",sum);
+    }
+    else if(alph=='w'){
+        int a = 10;
+        int b = 20;
+        printf("The value of a %d\n",a);
+        printf("The value of b %d\n",b);
+        a = a+b;
+        b = a-b;
+        a = a-b;
+        printf("The value of a after swap is %d\n",a);
+        printf("The value of b after swap is %d",b);
+    }
+    else if(alph=='p'){
+        int a;
+        printf("Enter the number : ");
+        scanf("%d",&a);
+        int sum = 0;
+        int rem;
+        int temp = a;
+        while(a>0){
+            rem = a%10;
+            sum = sum*10+rem;
+            a = a/10;
+        }
+        if(temp==sum){
+            printf("It is a pallendrom");
+        }
+        else{
+            printf("It is not pallendrom");
+        }
+    }
+    else if(alph=='r'){
+        int a;
+        printf("Enter the number : ");
+        scanf("%d",&a);
+        int sum = 0;
+        int rem;
+        while(a>0){
+            rem = a%10;
+            sum = sum*10+rem;
+            a = a/10;
+        }
+        printf("%d",sum);
+    }
+    else if(alph=='a'){
+        int a;
+        printf("Enter the number : ");
+        scanf("%d",&a);
+        int sum = 0;
+        int rem;
+        int temp = a;
+        while(a>0){
+            rem = a%10;
+            sum = sum+rem*rem*rem;
+            a = a/10;
+        }
+        if(temp==sum){
+            printf("It is armstrom number");
+        }
+        else{
+            printf("It is not armstrom number");
+        }
+    }
+    else if(alph=='c'){
+        int a;
+        printf("Enter the number : ");
+        scanf("%d",&a);
+        int count = 0;
+        while(a>0){
+            a = a/10;
+            count++;
+        }
+        printf("%d",count);
+    }
+    else if(alph=='t'){
+        int a;
+        int b = 1;
+        printf("Enter the number for table : ");
+        scanf("%d",&a);
+        while(b<=10){
+            printf("%d\n",b*a);
+            b++;
+        }
+    }
+    return 0;
+}
