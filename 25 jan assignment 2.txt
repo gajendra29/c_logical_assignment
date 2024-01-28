@@ -149,7 +149,7 @@ void voter(){
 void vowel(){
     char alph;
     printf("Enter the charactar : ");
-    scanf("%c",&alph);
+    scanf("%c ",&alph);
     if(alph=='a'||alph=='e'||alph=='i'||alph=='o'||alph=='u'){
         printf("vowel\n");
     }
@@ -160,7 +160,7 @@ void vowel(){
 void gender(){
     char a;
     printf("Enter the charactar : ");
-    scanf("%c",&a);
+    scanf(" %c",&a);
     if(a=='f'){
         printf("female\n");
     }
@@ -190,6 +190,25 @@ void max(){
     }
     else{
         printf("All are equal\n");
+    }
+}
+void area(){
+    char alph;
+    printf("Enter the charactar from a(area) and v(volumn) : ");
+    scanf(" %c",&alph);
+    if(alph=='a'){
+        char al;
+        printf("Enter the charactar between t(triangle),s(square),r(rectangle) : ");
+        scanf("%c",&al);
+        if(al=='t'){
+            int b,h;
+            printf("Enter the breath of triangle : ");
+            scanf("%d",&b);
+            printf("Enter the height of triangle : ");
+            scanf("%d",&h);
+            int c=1/2*b*h;
+            printf("The area of triangle is : %d",c);
+        }
     }
 }
 
