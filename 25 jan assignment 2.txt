@@ -220,6 +220,99 @@ count() :
 factorial():
 fibonaaci():
 sumofdigit() :
----------------------------------------------
-5 pattern functions 
---------------------------------------------------------
+
+Ans)
+#include <stdio.h>
+int reverse();
+int pallindrome();
+int Armstrong();
+int count();
+int factorial();
+int fabinacci();
+int sum();
+int main(){ 
+    reverse();
+    pallindrome();
+    Armstrong();
+    count();
+    factorial();
+    fabinacci();
+    sum();
+}
+    int reverse(){
+        int num = 6312, rem, sum = 0;
+        while(num > 0){
+            rem = num % 10;
+            sum = sum * 10 + rem;
+            num = num / 10;
+        }
+        printf("%d",sum);
+        return 0;
+    }
+    int pallindrome(){
+        int num, m;
+        printf("enter number1\n");
+        scanf("%d",&num);
+        m = num;
+        int rem, sum = 0;
+        while(num > 0){
+            rem = num % 10;
+            sum = sum * 10 + rem;
+            num = num / 10;
+        }
+        if(m == sum){ printf("pallindrome\n"); }
+        else{ printf("not\n"); }
+        return 0;
+    }
+    int Armstrong(){
+        int num = 152, rem, sum = 0, temp = num;
+        while(num > 0){
+            rem = num % 10;
+            num = num / 10;
+            sum = sum + rem * rem * rem;
+        }
+        if(temp == sum) printf("Armstrong");
+        else printf("not");
+        return 0;
+    }
+    int count(){
+        int num = 67437, count = 0;
+        while(num > 0){
+            num = num / 10;
+            count++;
+        }
+        printf("%d",count);
+        return 0;
+    }
+    int factorial(){
+        int n=5;
+        int fact=1;
+        for(int i=1;i<=n;i++){
+            fact=fact * i;
+        }
+        printf("%d",fact);
+        return 0;
+    }
+    int fabinacci(){
+        int n=5,n1=0,n2=1,n3;
+        printf("%d %d",n1,n2);
+        for(int i=1;i<=n;i++){
+            n3=n1+n2;
+            printf("%d ",n3);
+            n1 = n2;
+            n2 = n3;
+        }
+        return 0;
+    }
+    int sum(){
+        int num = 12573, rem = 0, sum = 0;
+        while(num > 0){
+            rem = num % 10;
+            num = num / 10;
+            sum = sum + rem;
+        }
+        printf("%d",sum);
+        return 0;
+    }
+
+--------------------------------
